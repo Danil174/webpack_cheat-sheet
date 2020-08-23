@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    context: path.resolve(__dirname, 'src'),
     entry: {
-        main: './src/index.js',
-        analytics: './src/analytics.js'
+        main: './index.js',
+        analytics: './analytics.js'
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -14,8 +14,16 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './index.html'
         }),
         new CleanWebpackPlugin(),
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
+    }
 }

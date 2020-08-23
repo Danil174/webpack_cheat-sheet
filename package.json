@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,9 @@
   "homepage": "https://github.com/Danil174/webpack_cheat-sheet#readme",
   "devDependencies": {
     "clean-webpack-plugin": "3.0.0",
+    "css-loader": "4.2.1",
     "html-webpack-plugin": "4.3.0",
+    "style-loader": "1.2.1",
     "webpack": "4.43.0",
     "webpack-cli": "3.3.12"
   }
