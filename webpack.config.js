@@ -49,7 +49,7 @@ const cssLoaders = (extra) => {
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
-        main: ['@babel/polyfill', './index.js'],
+        main: './index.js',
         analytics: './analytics.js'
     },
     output: {
@@ -83,7 +83,7 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: filename(`css`)
-        }),
+        })
     ],
     module: {
         rules: [
@@ -110,21 +110,6 @@ module.exports = {
             {
                 test: /\.csv$/,
                 use: ['csv-loader']
-            },
-            { 
-                test: /\.js$/, 
-                exclude: /node_modules/, 
-                loader: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                          '@babel/preset-env'
-                        ],
-                        plugins: [
-                            '@babel/plugin-proposal-class-properties'
-                        ]
-                    }
-                }
             }
         ]
     }
