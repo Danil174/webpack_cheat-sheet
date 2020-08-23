@@ -1,5 +1,6 @@
 import * as $ from "jquery";
 import Post from '@models/post';
+import './babel'
 import './styles/styles.css';
 import './styles/new.less';
 import Ava from '@/assets/avatar';
