@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Danil174/webpack_cheat-sheet#readme",
   "devDependencies": {
     "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "6.0.3",
     "css-loader": "4.2.1",
     "csv-loader": "3.0.3",
     "file-loader": "6.0.0",
