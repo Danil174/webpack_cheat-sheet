@@ -15,7 +15,7 @@ h1 {
     text-align: center;
 }
 
-.ava {
+.avatar {
     background-image: url("../assets/avatar.jpg");
     background-size: cover;
     height: 200px;
