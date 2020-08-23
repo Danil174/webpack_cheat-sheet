@@ -1,6 +1,6 @@
-import Post from './post.js';
+import Post from '@models/post';
 import './styles/styles.css';
-import Ava from './assets/avatar.jpg';
+import Ava from '@/assets/avatar';
 // import xml from './assets/data.xml';
 // import csv from './assets/data.csv';
 
