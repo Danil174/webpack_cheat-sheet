@@ -3,6 +3,7 @@ import Post from '@models/post';
 import './styles/styles.css';
 import './styles/new.less';
 import Ava from '@/assets/avatar';
+import './babel';
 // import xml from './assets/data.xml';
 // import csv from './assets/data.csv';
 
