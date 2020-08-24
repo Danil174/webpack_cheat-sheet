@@ -11,3 +11,8 @@ class Util {
 console.log(`Util id:`, Util.id)
 
 const unused = 42;
+
+import('lodash').then(() => {
+    // eslint-disable-next-line no-undef
+    console.log('Lodash', _.random(0, 42, true));
+});
