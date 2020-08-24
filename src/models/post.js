@@ -13,7 +13,7 @@ export default class Post {
         }, null, 2)
     }
 
-    // get uppercaseTitle() {
-    //     return this.title.toUpperCase();
-    // }
+    get uppercaseTitle() {
+        return this.title.toUpperCase();
+    }
 }
